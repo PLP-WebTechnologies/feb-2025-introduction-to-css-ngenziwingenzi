@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 class="h2heading">List of modules I've learned so far in PLP Academy</h2>
+        <ol type="i" id="list">
+            <li>Software Engineering Essentials</li>
+            <li>Web Development</li>
+            <li>Python Programming</li>
+            <li>Database Management in MySQL</li>
+            <li>Startup Building</li>
+        </ol><hr>
+        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Software Engineering">
+    </header>
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th> 
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ngenzi</td>
+                    <td>Ruyenzi</td>
+                    <td>0780354633</td>
+                    <td>nshutihubert04@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Josue</td>
+                    <td>Musanze</td>
+                    <td>0780567889</td>
+                    <td>niyomukunzi04@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Shyaka Wariwe</td>
+                    <td>Musha</td>
+                    <td>0780334532</td>
+                    <td>eatencodebro04@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2 class="h2heading">Fill the following form to apply to PLP Academy</h2>
+        <form action="php staffs" method="get">
+            <fieldset>
+                <legend>Personal Identification</legend>
+                <label for="studname">Name:</label>
+                <input type="text" id="studname" name="name" placeholder="Enter your name"><br>
+                <label for="studemail">Email:</label>
+                <input type="email" id="studemail" name="email" placeholder="Enter your email"><br>
+                <label for="studpassword">Password:</label>
+                <input type="password" id="studpassword" name="password" placeholder="Password"><br>
+                <label for="studpassword2">Confirm Password:</label>
+                <input type="password" id="studpassword2" name="password2" placeholder="Re-enter Password"><br>
+                <label for="birthdate">Birthdate:</label>
+                <input type="date" id="birthdate" name="birthdate" placeholder="Enter your birthdate"><br>
+                <label for="sex">Gender:</label>
+                <select name="sex" id="sex">
+                    <option value="" disabled selected>Choose gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Choose the Cohort</legend>
+                
+                <label for="feb">FEB COHORT</label>
+                <input type="radio" id="feb" name="cohort" value="feb">
+
+                <label for="august">AUGUST COHORT</label>
+                <input type="radio" id="august" name="cohort" value="august">
+            </fieldset>
+            <fieldset>
+                <legend>Choose interest(s)</legend>
+
+                <label for="web">Web Development</label>
+                <input type="checkbox" id="web" name="web"><br>
+
+                <label for="mobile">Mobile Development</label>
+                <input type="checkbox" id="mobile" name="mobile"><br>
+
+                <label for="data">Data Analysis</label>
+                <input type="checkbox" id="data" name="data"><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
